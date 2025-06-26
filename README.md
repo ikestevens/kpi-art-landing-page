@@ -2,16 +2,12 @@
 
 ## What is this ?? ##
 
-This display shows two important automation metrics that the Data Science team monitors closely. These numbers are updated daily.
+This display shows two important automation metrics that the Data Science team monitors closely. These numbers are updated daily. Talk to Ike to learn more!
 
-### VI Task Automation ###
+### VI Task Automation Graphic ###
 
-The percentage of Vendor Items that are successfully categorized into their food category using ML models.
+Moving colored blocks that slowly converge onto an image of a food. There are many pixel art food images that it randomly selects. As the automation metric goes up, we'll see more and more blocks. We only see blocks covering the percentage of the screen corresponding to the VI Task percentage. 
 
-The graphic shows a random allocation of blocks, they slowly rearrange to converge on a food. However, only the VI Task Automation percentage of blocks are showing, so over time, we'll see more and more of the image as the percentage increases.
+## Data Entry Automation Graphic  ##
 
-### Data Entry Automation ###
-
-The full percentage shows how many invoices we successfully parse all of the information from using programmatic and machine learning techniques. Partial automation means we automated a portion of the invoice.
-
-The graphic shows slow moving ribbons following a flow field algorithm, the ribbon colors correspond to the percentage of each category. It's like a fancy pie chart.
+Swimming ribbons whose color distribution matches the automation percentages. The movements and ribbon length are random.
