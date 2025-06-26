@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>KPI Art</title>
+    <title>Automation Dashboards</title>
     <style>
         html, body {
             margin: 0;
             padding: 0;
             height: 100%;
             overflow: hidden;
+            font-family: sans-serif;
         }
 
         .container {
@@ -22,6 +23,19 @@
             flex: 1;
             border: none;
         }
+
+        .qr-code {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 100px;
+            height: 100px;
+            background: white;
+            border-radius: 8px;
+            padding: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            z-index: 10;
+        }
     </style>
 </head>
 <body>
@@ -29,5 +43,11 @@
     <iframe src="https://ikestevens.github.io/vi-task-automation/"></iframe>
     <iframe src="https://ikestevens.github.io/data-entry-automation/"></iframe>
 </div>
+
+<a href="https://github.com/ikestevens/kpi-art-landing-page" target="_blank" title="View README">
+    <img class="qr-code"
+         src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://github.com/ikestevens/kpi-art-landing-page"
+         alt="What is this?">
+</a>
 </body>
 </html>
