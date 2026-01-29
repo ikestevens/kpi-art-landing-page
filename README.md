@@ -10,7 +10,7 @@ Moving colored blocks that slowly converge onto an image of a food. There are ma
 
 ## Data Entry Automation Graphic  ##
 
-The display shows 100 blocks that correspond to the data entry automation. The blocks collapse in a random direction, and then expand with positions switched at random.
+The display shows 100 blocks whose color corresponds to the data entry automation percentage. The blocks collapse in a random direction, and then expand with positions switched while maintaining the percentages.
 
 ## Sales Graphic  ##
 
