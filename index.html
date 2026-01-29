@@ -43,8 +43,8 @@
 </head>
 <body>
 <div class="container">
-    <iframe src="https://ikestevens.github.io/vi-task-automation/" scrolling="no"></iframe>
-    <iframe src="https://ikestevens.github.io/data-entry-automation/" scrolling="no"></iframe>
+    <iframe id="left-frame" src="https://ikestevens.github.io/vi-task-automation/" scrolling="no"></iframe>
+    <iframe id="right-frame" src="https://ikestevens.github.io/data-entry-automation/" scrolling="no"></iframe>
 </div>
 
 <a href="https://github.com/ikestevens/kpi-art-landing-page" target="_blank" title="View README">
@@ -52,5 +52,36 @@
          src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://github.com/ikestevens/kpi-art-landing-page"
          alt="What is this?">
 </a>
+
+<script>
+    const leftFrame = document.getElementById('left-frame');
+    const rightFrame = document.getElementById('right-frame');
+    const artworks = [
+        'https://ikestevens.github.io/forecasting-error-artwork/',
+        'https://ikestevens.github.io/vi-task-automation/',
+        'https://ikestevens.github.io/data-entry-automation/'
+    ];
+    let currentIndex = 1; // Start with vi-task on left
+
+    function cycleArtworks() {
+        // Move backwards through the array
+        currentIndex = (currentIndex - 1 + artworks.length) % artworks.length;
+        const leftIndex = currentIndex;
+        const rightIndex = (currentIndex + 1) % artworks.length;
+
+        leftFrame.src = artworks[leftIndex];
+        rightFrame.src = artworks[rightIndex];
+    }
+
+    // Switch every 10 minutes (600000 milliseconds)
+    setInterval(cycleArtworks, 600000);
+
+    // Press 'm' to manually cycle
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'm' || event.key === 'M') {
+            cycleArtworks();
+        }
+    });
+</script>
 </body>
 </html>
