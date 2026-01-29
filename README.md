@@ -14,4 +14,4 @@ The display shows 100 blocks that correspond to the data entry automation. The b
 
 ## Sales Graphic  ##
 
-A wavy grid of squares that becomes more uniform as the error rate decreases. The number of rows corresponds to the 30 day error rate.
+A wavy grid of squares that becomes more uniform as the error rate decreases. The number of rows corresponds to the 30 day error rate. The color of the square grid changes when it crosses a row to make a mesmerizing display!
